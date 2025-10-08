@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Bulyamin yudsoh personal website">
+    <meta name="keywords" content="Bulyamin yudsoh, Profile, Homepage, about me, Work Gallery">
+    <meta name="author" content="Bulyamin yudsoh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIN</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Font Awesome (ใช้รุ่นใหม่กว่าเพื่อความเสถียร) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Waypoints (หากต้องการใช้ในอนาคต) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+</head>
+
+<body>
+
+    <div class="scroll-up-btn">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    <!--Navigation-->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="index.html"><span>Mr.</span>MIN</a></div>
+
+            <ul class="links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <div class="links-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!--Homepage-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello,</div>
+                <div class="text-2">I'm <span>Bulyamin yusoh</span></div>
+                <div class="text-3">and I'm a <span>IT Student</span></div>
+            </div>
+            <div class="images">
+                <img src="img/BU.jpg" class="shape">
+            </div>
+        </div>
+    </section>
+
+    <!--About section-->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="img/BU1.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm <span>Bulyamin yusoh</span></div>
+                    <hr>
+                    <p>I'm studying Information Technology, 2nd year of Bachelor's degree at Fatoni University. I'm
+                        interested in web development.</p>
+                    <p>My experience includes C language and basic cyber security.</p>
+                    <p>This is my first personal website using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <div class="max-width">
+            <h2 class="title">Portfolio</h2>
+            <div class="gallery owl-carousel">
+                <div class="figure">
+                    <div class="box">
+                        <img src="img/BU2.jpg" alt="">
+                        <div class="text">NaLaPaT</div>
+                    </div>
+                </div>
+                <div class="figure">
+                    <div class="box">
+                        <img src="img/BU3.jpg" alt="">
+                        <div class="text">Family Graduation</div>
+                    </div>
+                </div>
+                <div class="figure">
+                    <div class="box">
+                        <img src="img/BU4.jpg" alt="">
+                        <div class="text">Flood Relief</div>
+                    </div>
+                </div>
+                <div class="figure">
+                    <div class="box">
+                        <img src="img/BU5.jpg" alt="">
+                        <div class="text">Volunteer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact page-->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text1">Get in Touch</div>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fa fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Bulyamin yusoh</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-map-marker"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Narathiwat, Thailand</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fa fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">661431004@ftu.ac.th</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column right">
+                    <div class="text2">Message Me</div>
+                    <form action="contact.php" method="post">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="field number">
+                                <input type="text" name="phone" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="field email">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer section-->
+    <footer>
+        <span>Create By <a href="#">Bulyamin yusoh</a> | <span class="fa fa-copyright"></span> 2025 All rights
+            reserved.</span>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
